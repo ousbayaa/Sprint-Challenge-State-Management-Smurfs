@@ -23,10 +23,22 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+        With Context API, we no longer have to pass props down from component to component, data can be stored in a context object, and retrieve that data in the necessary components from the context object, not props.
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+        Actions - objects with up to two properties, type and payload. Actions are dispatched to reducer functions as an arguement. Actions tell reducers how to update the state.
+        Reducers - when in redux, reducers are the only place where state is updated. 
+        Store -  The store contains our state for our application, is everything thats changed within an application, represented by a single JavaScript object. Store contains our state for our application.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+      Application state is a global state that all components in the component tree can access (immutable?)
+      Component state is a local state that is local to a single component.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+      Redux-thunk is a middleware that provides the ability to handle async operations inside action creators.
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+      I liked context API's more because we don't have to deal with props, I feel like it's doing less for more.
 
 ## Project Set Up
 

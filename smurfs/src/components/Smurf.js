@@ -1,5 +1,6 @@
-import { useContext } from 'react';
+import React, {useContext} from 'react';
 import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import { SmurfContext } from '../contexts/SmurfContext';
 
 const Smurf = props => {
     const smurf = useContext(SmurfContext);
